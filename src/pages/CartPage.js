@@ -54,6 +54,7 @@ const CartPage = () => {
       console.log(error);
     }
   };
+  
   useEffect(() => {
     getToken();
   }, [auth?.token]);

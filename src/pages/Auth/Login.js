@@ -33,6 +33,8 @@ const Login = () => {
       } else {
         toast.error(res.data.message);
       }
+
+      console.log(res.data.user);
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong");

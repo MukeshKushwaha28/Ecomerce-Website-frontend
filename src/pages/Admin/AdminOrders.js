@@ -23,6 +23,7 @@ const AdminOrders = () => {
     try {
       const { data } = await axios.get("https://ecomerce-ilc7.onrender.com/api/v1/auth/all-orders");
       setOrders(data);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
